@@ -6,7 +6,6 @@
 }
 
 .header {
-  width: 100vw;
   height: 100vh;
   background-image: url(/img/strawberry.png);
   background-size: 100% 100%;
@@ -20,14 +19,117 @@
 
 .header .container {
   width: 1200px;
+  position: relative;
 }
 
 .header .container .navbar {
+  position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.header .container .navbar .navbar__logo {
+  font-size: 50px;
+  line-height: 25px;
+  color: #262626;
+  font-weight: 400;
+  font-family: "Pacifico";
+}
+
+.header .container .navbar .navbar__container .navbar__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 700;
+  font-family: 'Raleway', sans-serif;
+}
+
+.header .container .navbar .navbar__container .navbar__items .navbar__item {
+  display: inline-block;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  margin-left: 35px;
+}
+
+.header .container .navbar .navbar__container .navbar__items .navbar__item .navbar__link {
+  text-decoration: none;
+  color: #262626;
+}
+
+.header .container .info {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.header .container .info .info__title {
+  font-size: 60px;
+  line-height: 25px;
+  color: #262626;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+}
+
+.header .container .info .info__information {
+  width: 370px;
+  margin-top: 30px;
+  font-size: 17px;
+  line-height: 27px;
+  color: #262626;
+  font-weight: 300;
+  font-family: 'Raleway', sans-serif;
+}
+
+.header .container .info .info__btn {
+  width: 200px;
+  height: 55px;
+  font-size: 16px;
+  font-weight: 300;
+  font-family: "Raleway", sans-serif;
+  border-radius: 1px;
+  -webkit-box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5);
+  background-color: #ff6033;
+  margin-top: 30px;
+  cursor: pointer;
+  display: inline-block;
+  color: white;
+  text-transform: uppercase;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+
+.header .container .info .info__btn:hover {
+  background-color: #ff7e4e;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .container {
+  width: 1200px;
+}
+
+main .container .about {
+  height: 100vh;
 }
 /*# sourceMappingURL=style.css.map */
