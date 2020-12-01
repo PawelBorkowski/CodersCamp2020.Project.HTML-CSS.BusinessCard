@@ -5,7 +5,7 @@
 }
 
 .header {
-    // width: 100vw;
+    //width: 100vw;
     height: 100vh;
     background-image: url(/img/strawberry.png);
     background-size: 100% 100%;
@@ -15,24 +15,27 @@
 
     .container {
         width: 1200px;
-        position: relative;
+
 
         .navbar {
-            position: fixed;
+
             display: flex;
             justify-content: space-between;
             width: 100%;
             margin-top: 50px;
+            z-index: 100000;
 
             .navbar__logo {
+
                 font-size: 50px;
                 line-height: 25px;
                 color: #262626;
                 font-weight: 400;
-                font-family: "Pacifico";
+                font-family: "Pacifico", sans-serif;
             }
 
             .navbar__container {
+
 
                 .navbar__items {
                     display: flex;
