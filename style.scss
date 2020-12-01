@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/img/strawberry.png);
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+
+    .container {
+        width: 1200px;
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+
+        }
+    }
+}
