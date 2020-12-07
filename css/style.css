@@ -6,22 +6,20 @@
 }
 
 .header {
-  height: 100vh;
-  background-image: url(/img/strawberry.png);
-  background-size: 100% 100%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .header .container {
-  width: 1200px;
-}
-
-.header .container .navbar {
+  max-width: 1200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -30,10 +28,9 @@
           justify-content: space-between;
   width: 100%;
   margin-top: 50px;
-  z-index: 100000;
 }
 
-.header .container .navbar .navbar__logo {
+.header .container .navbar__logo {
   font-size: 50px;
   line-height: 25px;
   color: #262626;
@@ -41,7 +38,7 @@
   font-family: "Pacifico", sans-serif;
 }
 
-.header .container .navbar .navbar__container .navbar__items {
+.header .container .navbar__container .navbar__items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -54,7 +51,7 @@
   font-family: 'Raleway', sans-serif;
 }
 
-.header .container .navbar .navbar__container .navbar__items .navbar__item {
+.header .container .navbar__container .navbar__items .navbar__item {
   display: inline-block;
   text-transform: uppercase;
   text-align: center;
@@ -62,19 +59,50 @@
   margin-left: 35px;
 }
 
-.header .container .navbar .navbar__container .navbar__items .navbar__item .navbar__link {
+.header .container .navbar__container .navbar__items .navbar__item .navbar__link {
   text-decoration: none;
   color: #262626;
+  position: relative;
 }
 
-.header .container .info {
+.header .container .navbar__container .navbar__items .navbar__item .navbar__link:before {
+  content: "";
   position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  top: -10px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: orange;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
 }
 
-.header .container .info .info__title {
+.header .container .navbar__container .navbar__items .navbar__item .navbar__link.active, .header .container .navbar__container .navbar__items .navbar__item .navbar__link:hover:before {
+  width: 100%;
+}
+
+main .info {
+  height: 100vh;
+  width: 100%;
+  background-image: url(/img/strawberry.png);
+  background-size: 100% 100%;
+}
+
+main .info .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  top: 40%;
+}
+
+main .info .container .info__title {
   font-size: 60px;
   line-height: 25px;
   color: #262626;
@@ -82,7 +110,7 @@
   font-weight: 700;
 }
 
-.header .container .info .info__information {
+main .info .container .info__information {
   width: 370px;
   margin-top: 30px;
   font-size: 17px;
@@ -92,7 +120,7 @@
   font-family: 'Raleway', sans-serif;
 }
 
-.header .container .info .info__btn {
+main .info .container .info__btn {
   width: 200px;
   height: 55px;
   font-size: 16px;
@@ -111,24 +139,12 @@
   transition: background-color 0.5s;
 }
 
-.header .container .info .info__btn:hover {
+main .info .container .info__btn:hover {
   background-color: #ff7e4e;
 }
 
-main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-main .container {
-  width: 1200px;
-}
-
-main .container .about {
+main .about {
   height: 100vh;
+  background-image: radial-gradient(circle at center, #00c3c3 0%, #00b8b7 32%, #00afae 68%, #009f9f 100%);
 }
 /*# sourceMappingURL=style.css.map */

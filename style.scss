@@ -5,67 +5,93 @@
 }
 
 .header {
-    //width: 100vw;
-    height: 100vh;
-    background-image: url(/img/strawberry.png);
-    background-size: 100% 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
-
+    position: fixed;
+    top: 0;
+    left: 0;
 
     .container {
-        width: 1200px;
+        max-width: 1200px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 50px;
 
 
-        .navbar {
+        .navbar__logo {
+            font-size: 50px;
+            line-height: 25px;
+            color: #262626;
+            font-weight: 400;
+            font-family: "Pacifico", sans-serif;
+        }
 
-            display: flex;
-            justify-content: space-between;
-            width: 100%;
-            margin-top: 50px;
-            z-index: 100000;
+        .navbar__container {
 
-            .navbar__logo {
-
-                font-size: 50px;
+            .navbar__items {
+                display: flex;
+                align-items: center;
+                font-size: 18px;
                 line-height: 25px;
-                color: #262626;
-                font-weight: 400;
-                font-family: "Pacifico", sans-serif;
-            }
+                font-weight: 700;
+                font-family: 'Raleway', sans-serif;
 
-            .navbar__container {
+                .navbar__item {
+                    display: inline-block;
+                    text-transform: uppercase;
+                    text-align: center;
+                    text-decoration: none;
+                    margin-left: 35px;
 
 
-                .navbar__items {
-                    display: flex;
-                    align-items: center;
-                    font-size: 18px;
-                    line-height: 25px;
-                    font-weight: 700;
-                    font-family: 'Raleway', sans-serif;
 
-                    .navbar__item {
-                        display: inline-block;
-                        text-transform: uppercase;
-                        text-align: center;
+                    .navbar__link {
                         text-decoration: none;
-                        margin-left: 35px;
+                        color: #262626;
+                        position: relative;
 
-                        .navbar__link {
-                            text-decoration: none;
-                            color: #262626;
+                        &:before {
+                            content: "";
+                            position: absolute;
+                            top: -10px;
+                            left: 0;
+                            width: 0;
+                            height: 3px;
+                            background-color: orange;
+                            transition: width 0.5s;
+                        }
+
+                        &.active,
+                        &:hover:before {
+                            width: 100%;
                         }
                     }
                 }
             }
         }
 
-        .info {
+    }
+}
 
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
+
+main {
+
+    .info {
+        height: 100vh;
+        width: 100%;
+        background-image: url(/img/strawberry.png);
+        background-size: 100% 100%;
+
+        .container {
+            max-width: 1200px;
+
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            top: 40%;
 
             .info__title {
                 font-size: 60px;
@@ -107,19 +133,13 @@
             }
         }
     }
-}
 
-
-main {
-    display: flex;
-    justify-content: center;
-
-    .container {
-        width: 1200px;
-
-        .about {
-            //width: 100%;
-            height: 100vh;
-        }
+    .about {
+        height: 100vh;
+        background-image: radial-gradient(circle at center, #00c3c3 0%, #00b8b7 32%, #00afae 68%, #009f9f 100%);
     }
+
+
+
+
 }
