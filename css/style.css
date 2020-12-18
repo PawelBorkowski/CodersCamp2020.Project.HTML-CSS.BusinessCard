@@ -1,6 +1,4 @@
 * {
-  margin: 0;
-  padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -77,14 +75,7 @@
 
 @media (max-width: 767px) {
   .header .container .navbar__container .navbar__items {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-top: 10px;
+    display: none;
   }
 }
 
@@ -96,32 +87,32 @@
   margin-left: 35px;
 }
 
-.header .container .navbar__container .navbar__items .navbar__item .navbar__link {
+@media (max-width: 992px) {
+  .header .container .navbar__container .navbar__items {
+    margin-left: 25px;
+  }
+}
+
+.header .container .navbar__container .navbar__items .navbar__link {
   text-decoration: none;
   color: #262626;
   position: relative;
 }
 
-.header .container .navbar__container .navbar__items .navbar__item .navbar__link:before {
-  content: "";
+.header .container .navbar__container .navbar__items .navbar__link:before {
+  content: "   ";
   position: absolute;
   top: -10px;
-  left: 0;
+  left: 3%;
   width: 0;
   height: 3px;
   background-color: orange;
-  -webkit-transition: width 0.5s;
-  transition: width 0.5s;
+  -webkit-transition: width 0.4s;
+  transition: width 0.4s;
 }
 
-.header .container .navbar__container .navbar__items .navbar__item .navbar__link.active, .header .container .navbar__container .navbar__items .navbar__item .navbar__link:hover:before {
-  width: 100%;
-}
-
-@media (max-width: 992px) {
-  .header .container .navbar__container .navbar__items .navbar__item {
-    margin-left: 25px;
-  }
+.header .container .navbar__container .navbar__items .navbar__link.active, .header .container .navbar__container .navbar__items .navbar__link:hover:before {
+  width: 94%;
 }
 
 main .info {
@@ -151,7 +142,7 @@ main .info .container_info {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-  top: 5%;
+  z-index: -10;
 }
 
 @media (max-width: 767px) {
