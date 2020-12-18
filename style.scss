@@ -37,7 +37,7 @@
         }
 
         .navbar__container {
-            overflow: hidden;
+
 
             .navbar__items {
                 display: flex;
@@ -109,9 +109,6 @@ main {
         display: flex;
         justify-content: center;
 
-
-
-
         .container_info {
             max-width: 1280px;
             width: 90%;
@@ -124,10 +121,6 @@ main {
             @media (max-width:767px) {
                 align-items: center;
             }
-
-
-
-
 
 
             .info__title {
@@ -169,7 +162,6 @@ main {
 
                 }
 
-
             }
 
             .info__btn {
@@ -205,6 +197,109 @@ main {
     .about {
         height: 100vh;
         background-image: radial-gradient(circle at center, #00c3c3 0%, #00b8b7 32%, #00afae 68%, #009f9f 100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .about__img {
+            @media (max-width:992px) {
+                width: 50vw;
+                height: 50vh;
+            }
+
+            @media (max-width:767px) {
+                width: 40vw;
+                height: 30vh;
+            }
+
+            @media (max-width:600px) {
+                width: 35vw;
+                height: 20vh;
+            }
+
+            @media (max-width:480px) {
+                width: 35vw;
+                height: 20vh;
+                margin-top: 10vh;
+            }
+
+        }
+
+        .about_container {
+            max-width: 1200px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 75px;
+            margin-left: 20px;
+            margin-right: 20px;
+
+            @media (max-width:767px) {
+                flex-direction: column;
+                margin-left: 30px;
+                margin-right: 30px;
+            }
+
+            .about_container__info {
+
+                flex-direction: column;
+
+                .title {
+                    font-size: 90px;
+                    line-height: 27px;
+                    color: #ffffff;
+                    font-weight: 700;
+                    font-family: "Raleway", sans-serif;
+                    margin-bottom: 80px;
+
+                    @media (max-width:992px) {
+                        font-size: 60px;
+                        line-height: 7px;
+                    }
+
+                    @media (max-width:767px) {
+                        text-align: center;
+                        font-size: 60px;
+                        line-height: 7px;
+                        margin-bottom: 50px;
+                    }
+
+                    @media (max-width:480px) {
+                        font-size: 40px;
+                        line-height: 1px;
+                        margin-bottom: 40px;
+                    }
+
+                    @media (max-width:320px) {
+                        font-size: 30px;
+                        line-height: 0px;
+                        margin-bottom: 30px;
+                    }
+
+                }
+
+                .description {
+                    margin-bottom: 10px;
+                    font-size: 17px;
+                    line-height: 27px;
+                    color: #ffffff;
+                    font-weight: 300;
+                    font-family: "Raleway", sans-serif;
+
+                    @media (max-width:992px) {
+                        font-size: 15px;
+                        line-height: 20px;
+                    }
+
+                    @media (max-width:767px) {
+                        text-align: center;
+                    }
+                }
+            }
+
+
+        }
     }
 
 
