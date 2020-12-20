@@ -510,7 +510,6 @@ main .services .container .services__description .services__description-photo im
 
 main .footer {
   height: 8vh;
-  max-width: 1280px;
   background-color: #262626;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -518,9 +517,11 @@ main .footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 100%;
 }
 
 main .footer .container_footer {
+  max-width: 1280px;
   width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
