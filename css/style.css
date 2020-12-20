@@ -270,7 +270,7 @@ main .about {
 }
 
 main .about .about_container {
-  max-width: 1200px;
+  max-width: 1280px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -368,5 +368,97 @@ main .about .about_container .about_container__info .description {
   main .about .about_container .about_container__info .description {
     text-align: center;
   }
+}
+
+main .services {
+  height: 100vh;
+  background-color: #70bfff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .services .container {
+  max-width: 1280px;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+main .services .container .service__items .service__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #ffffff;
+  margin-top: 10px;
+}
+
+main .services .container .service__items .service__item .service__item-title {
+  font-size: 20px;
+  line-height: 27px;
+  color: #262626;
+  font-weight: 700;
+  font-family: "Raleway";
+  text-align: right;
+  margin-left: 20px;
+  width: 100%;
+  text-align: center;
+  margin-right: 20px;
+}
+
+main .services .container .service__items .service__item .service__item-icon {
+  width: 74px;
+  height: 54px;
+  margin-right: 20px;
+  padding-left: 20px;
+  border-left: 2px black solid;
+}
+
+main .services .container .services__description {
+  position: relative;
+}
+
+main .services .container .services__description .services__description-title {
+  font-size: 90px;
+  line-height: 27px;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Raleway";
+  position: absolute;
+  width: 110%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+main .services .container .services__description .services__description-photo img {
+  width: 100%;
+  height: 100%;
 }
 /*# sourceMappingURL=style.css.map */

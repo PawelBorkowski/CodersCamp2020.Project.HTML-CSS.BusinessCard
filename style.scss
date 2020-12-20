@@ -222,7 +222,7 @@ main {
         }
 
         .about_container {
-            max-width: 1200px;
+            max-width: 1280px;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
@@ -298,7 +298,106 @@ main {
         }
     }
 
+    .services {
+        height: 100vh;
+        background-color: #70bfff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .container {
+            max-width: 1280px;
+            width: 90%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            margin-left: 20px;
+            margin-right: 20px;
+
+
+            .service__items {
+
+
+
+                .service__item {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    //height: 100px;
+                    //width: 400px;
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+                    background-color: #ffffff;
+                    margin-top: 10px;
+
+
+                    // &:hover {
+                    //     height: 100px;
+                    //     filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.5));
+                    // }
+                    .service__item-title {
+                        font-size: 20px;
+                        line-height: 27px;
+                        color: #262626;
+                        font-weight: 700;
+                        font-family: "Raleway";
+                        text-align: right;
+                        margin-left: 20px;
+                        width: 100%;
+                        text-align: center;
+                        margin-right: 20px;
+                    }
+
+                    .service__item-icon {
+                        width: 74px;
+                        height: 54px;
+                        margin-right: 20px;
+                        padding-left: 20px;
+                        border-left: 2px black solid;
+                    }
+
+                }
+            }
+
+            .services__description {
+                position: relative;
+
+                .services__description-title {
+                    font-size: 90px;
+                    line-height: 27px;
+                    color: #ffffff;
+                    font-weight: 700;
+                    font-family: "Raleway";
+                    //text-align: right;
+                    position: absolute;
+                    width: 110%;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+
+                .services__description-photo {
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+
 
 
 
 }
+
+// &:before {
+//     content: "   ";
+//     position: absolute;
+//     top: -10px;
+//     left: 3%;
+//     width: 0;
+//     height: 3px;
+//     background-color: orange;
+//     transition: width 0.4s;
+// }
