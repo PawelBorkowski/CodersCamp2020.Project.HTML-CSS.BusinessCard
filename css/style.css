@@ -14,6 +14,7 @@
   position: fixed;
   top: 0;
   left: 0;
+  background-color: rgba(255, 235, 205, 0.9);
 }
 
 .header .container {
@@ -24,9 +25,10 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-item-align: center;
+      align-self: center;
   width: 90%;
-  margin-top: 50px;
-  z-index: 900;
+  margin-top: 35px;
 }
 
 @media (max-width: 767px) {
@@ -43,7 +45,7 @@
 
 .header .container .navbar__logo {
   font-size: 50px;
-  line-height: 25px;
+  line-height: 5px;
   color: #262626;
   font-weight: 400;
   font-family: "Pacifico", sans-serif;
@@ -583,6 +585,27 @@ main .blog .container .blog__second {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 95%;
+}
+
+@media (max-width: 600px) {
+  main .blog .container .blog__second {
+    font-size: 18px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    width: auto;
+  }
 }
 
 main .blog .container .blog__second .blog__second-phot {
@@ -590,6 +613,20 @@ main .blog .container .blog__second .blog__second-phot {
   width: 100%;
   margin: 10px;
   position: relative;
+  overflow: hidden;
+  -webkit-transition: all .6s ease-in-out;
+  transition: all .6s ease-in-out;
+}
+
+main .blog .container .blog__second .blog__second-phot img:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+@media (max-width: 600px) {
+  main .blog .container .blog__second .blog__second-phot {
+    width: auto;
+  }
 }
 
 main .blog .container .blog__second .blog__second-phot .blog__second-date {
@@ -609,7 +646,6 @@ main .blog .container .blog__second .blog__second-phot .blog__second-date {
 }
 
 main .blog .container .blog__second .blog__second-phot .blog__second-title {
-  height: 79px;
   font-size: 20px;
   color: #ffffff;
   font-weight: 700;
@@ -617,6 +653,29 @@ main .blog .container .blog__second .blog__second-phot .blog__second-title {
   position: absolute;
   top: 60%;
   left: 5%;
+}
+
+@media (max-width: 767px) {
+  main .blog .container .blog__second .blog__second-phot .blog__second-title {
+    font-size: 18px;
+  }
+}
+
+main .blog .container .blog__second .blog__second-phot .blog__second-author {
+  width: 100%;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Raleway";
+  position: absolute;
+  top: 90%;
+  left: 5%;
+}
+
+@media (max-width: 767px) {
+  main .blog .container .blog__second .blog__second-phot .blog__second-author {
+    font-size: 14px;
+  }
 }
 
 main .blog .container .blog__third .btn {
