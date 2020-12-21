@@ -320,6 +320,14 @@ main .about .about_container .about_container__info .title {
   margin-bottom: 80px;
 }
 
+@media (max-width: 1160px) {
+  main .about .about_container .about_container__info .title {
+    font-size: 55px;
+    line-height: 0px;
+    margin-bottom: 30px;
+  }
+}
+
 @media (max-width: 992px) {
   main .about .about_container .about_container__info .title {
     font-size: 60px;

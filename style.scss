@@ -252,6 +252,12 @@ main {
                     font-family: "Raleway", sans-serif;
                     margin-bottom: 80px;
 
+                    @media (max-width:1160px) {
+                        font-size: 55px;
+                        line-height: 0px;
+                        margin-bottom: 30px;
+                    }
+
                     @media (max-width:992px) {
                         font-size: 60px;
                         line-height: 7px;
