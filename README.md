@@ -5,7 +5,7 @@
 Projekt strony internetowej wykonany podczas kursu CodersCamp 2020.
 
 ## Technologie
-## Projekt zostałwykoany przy użyciu:
+Projekt został wykoany przy użyciu:
 * HTML
 * SCSS
 * CSS
@@ -32,5 +32,5 @@ W projektcie powinny być zaprezentowane praktyczne umiejętności zwoazane z HT
 ## Demo:
 * https://pawelborkowski.github.io/CodersCamp2020.Project.HTML-CSS.BusinessCard/
 
-## Projekt wykonany przez: 
+# Projekt wykonany przez: 
 *  Auskteez Tran   https://www.behance.net/Auskteez
