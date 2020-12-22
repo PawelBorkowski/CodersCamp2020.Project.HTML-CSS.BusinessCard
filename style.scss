@@ -605,7 +605,7 @@ main {
             .blog__second {
                 margin-top: 3%;
                 display: flex;
-                width: 95%;
+                width: 90%;
 
                 @media (max-width:600px) {
                     font-size: 18px;
@@ -618,20 +618,23 @@ main {
 
                 .blog__second-phot {
                     display: block;
-                    width: 100%;
+                    width: 90%;
                     margin: 10px;
                     position: relative;
                     overflow: hidden;
                     transition: all .6s ease-in-out;
+                    ;
 
                     img {
+                        width: 100%;
+
                         &:hover {
                             transform: scale(1.5);
                         }
                     }
 
                     @media (max-width:600px) {
-                        width: auto;
+                        width: 90%;
                     }
 
                     .blog__second-date {
@@ -739,6 +742,10 @@ main {
                     font-weight: 700;
                     font-family: "Raleway";
                     text-align: center;
+
+                    @media (max-width:480px) {
+                        font-size: 60px;
+                    }
 
                 }
 
@@ -900,11 +907,7 @@ main {
                     //width: 50%;
                 }
 
-
-
                 .container__contact-form {
-
-
                     .form-group {
                         font-size: 15px;
                         line-height: 25px;
@@ -945,9 +948,7 @@ main {
                                 margin-right: 20px;
                                 margin-left: 20px;
                                 width: 90%;
-
                             }
-
                         }
                     }
 
@@ -1019,7 +1020,11 @@ main {
     background-color: #262626;
     display: flex;
     justify-content: center;
-    width: 100%;
+    //width: 100%;
+
+    @media (max-width:360px) {
+        height: 15vh;
+    }
 
     .container_footer {
         max-width: 1280px;
@@ -1027,8 +1032,9 @@ main {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-left: 20px;
-        margin-right: 20px;
+        // margin-left: 20px;
+        // margin-right: 20px;
+
 
         @media (max-width:600px) {
             flex-direction: column;
