@@ -1,16 +1,16 @@
 # CodersCamp 2020 - Projekt HTML & CSS
 
-# Informacje odnośnie projektu
+## Informacje odnośnie projektu
 
 Projekt strony internetowej wykonany podczas kursu CodersCamp 2020.
 
-# Technologie
+## Technologie
 ## Projekt zostałwykoany przy użyciu:
 * HTML
 * SCSS
 * CSS
 
-# Wymagania odnosnie projktu:
+## Wymagania odnosnie projktu:
 
 W projektcie powinny być zaprezentowane praktyczne umiejętności zwoazane z HTML i CSS :
 - Box-model
@@ -29,9 +29,8 @@ W projektcie powinny być zaprezentowane praktyczne umiejętności zwoazane z HT
 
 
 
-# Demo:
-
+## Demo:
 * https://pawelborkowski.github.io/CodersCamp2020.Project.HTML-CSS.BusinessCard/
 
-# Projekt wykonany przez: 
+## Projekt wykonany przez: 
 *  Auskteez Tran   https://www.behance.net/Auskteez
