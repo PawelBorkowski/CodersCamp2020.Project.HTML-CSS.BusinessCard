@@ -919,7 +919,7 @@ main .blog .container .blog__third .btn:hover {
 }
 
 main .gallery {
-  min-height: 100vh;
+  height: 100vh;
   background-color: #ffe92f;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -942,6 +942,11 @@ main .gallery .container {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 main .gallery .container img {
@@ -952,7 +957,6 @@ main .gallery .container img {
 main .gallery .container .gallery__paragraph {
   margin: 0 auto;
   width: 50vw;
-  height: 20vh;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -964,7 +968,6 @@ main .gallery .container .gallery__paragraph .gallery__paragraph-title {
   color: #262626;
   font-weight: 700;
   font-family: "Raleway";
-  text-align: right;
   text-align: center;
 }
 
@@ -992,12 +995,9 @@ main .gallery .container .gallery__photosup {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-  -webkit-box-flex: 2;
-      -ms-flex-positive: 2;
-          flex-grow: 2;
+  width: 60%;
+  height: 60%;
+  margin-bottom: 1.25%;
 }
 
 main .gallery .container .gallery__photosup .gallery__photosup-1 {
@@ -1006,7 +1006,7 @@ main .gallery .container .gallery__photosup .gallery__photosup-1 {
 
 main .gallery .container .gallery__photosup .gallery__photosup-1 .gallery-img1 {
   display: block;
-  width: 100%;
+  width: 113%;
 }
 
 main .gallery .container .gallery__photosup .gallery__photosup-1right {
@@ -1026,11 +1026,13 @@ main .gallery .container .gallery__photosup .gallery__photosup-1right {
 main .gallery .container .gallery__photosup .gallery__photosup-1right .gallery-img2 {
   display: block;
   width: 100%;
+  height: 48%;
 }
 
 main .gallery .container .gallery__photosup .gallery__photosup-1right .gallery-img3 {
   display: block;
   width: 100%;
+  height: 48%;
 }
 
 main .gallery .container .gallery__photosdown {
@@ -1041,10 +1043,13 @@ main .gallery .container .gallery__photosdown {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  width: 60%;
+  height: 60%;
 }
 
 main .gallery .container .gallery__photosdown .gallery_down1 {
   width: 50%;
+  margin-right: 2.5%;
 }
 
 main .gallery .container .gallery__photosdown .gallery_down2 {
@@ -1064,7 +1069,7 @@ main .gallery .container .gallery__button .btn {
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
-  margin: 10px 1px;
+  margin: 20px 1px;
   cursor: pointer;
   border-radius: 5px;
   font-size: 18px;
