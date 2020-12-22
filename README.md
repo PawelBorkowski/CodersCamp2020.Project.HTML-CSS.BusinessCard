@@ -1,15 +1,14 @@
 # CodersCamp 2020 - Projekt HTML & CSS
-**CodersCamp (coderscamp.edu.pl) - Największy otwarty kurs programowania webowego** 
 
-Gratulacje! 
-Skoro czytacie ten tekst, oznacza to, że dowiedliście swoich umiejętności ze znajomości HTML & CSS. 
-Zostaliście przydzieleni do zespołu, który będzie się uczył programowania i wykonywał prawdziwe aplikacje webowe.
-Teraz stajecie przed pierwszym większym wyzwaniem. 
-Technologie, o których się uczyliście, trzeba zastosować w praktyce.
-To pierwszy i ostatni na CodersCamp projekt, który będziecie robić w pojedynkę.
-Jednakże już macie cały zespół i mentora, który z pewnością będzie Was wspierał.
+# Informacje odnośnie projektu
 
-## Projekt HTML & CSS — Wizytówka / Portfolio
+Projekt strony internetowej wykonany podczas kursu CodersCamp 2020.
+
+# Technologie
+## Projekt zostałwykoany przy użyciu:
+* HTML
+* SCSS
+* CSS
 
 ### Zasady wykonywania projektu (wspólne dla wszystkich grup i mentorów): 
 
